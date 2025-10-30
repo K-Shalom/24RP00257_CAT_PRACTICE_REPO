@@ -1,8 +1,8 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class MyShapes extends Frame{
-    MyShapes(){
+public class MyShapes_24RP00257 extends Frame{
+    MyShapes_24RP00257(){
         setTitle("My  shapes");
         setSize(300,300);
         setLayout(null);
@@ -16,21 +16,23 @@ public class MyShapes extends Frame{
         });
     }
     public void paint(Graphics g){
-        g.setColor(Color.yellow);
-        g.fillOval(60,60,100,100);
-        g.setColor(Color.gray);
-        g.fillOval(76,85,20,20);
+        g.setColor(Color.white);
+        g.fillRect(0, 0, getWidth(), getHeight());
 
-        g.setColor(Color.gray);
+        g.setColor(Color.white);
+        g.fillOval(60,60,100,100);
+        g.setColor(Color.black);
+        g.drawOval(60,60,100,100);
+
+        g.setColor(Color.black);
+        g.fillOval(76,85,20,20);
         g.fillOval(120,85,20,20);
 
         g.setColor(Color.black);
         g.drawArc(87,100,50,40,0,-190);
-
-
     }
 
     public static void main(String[] args) {
-       new MyShapes().setVisible(true);
+       new MyShapes_24RP00257().setVisible(true);
     }
 }
